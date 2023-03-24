@@ -14,8 +14,7 @@ function App() {
           }}>Contact Me</button>
       </div>
       <div className="paragraph">
-        <a className="social-link" href="https://github.com/shawarmaje">Github</a>
-        <a className="social-link" href="https://discord.com/users/562895658361815040">Discord</a>
+        <a className="social-link" href="https://github.com/husseinamine">Github</a>
         <a className="social-link" href="https://instagram.com/husseinamine">Instagram</a>
       </div>
 
