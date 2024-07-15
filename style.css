@@ -1,92 +1,169 @@
-@font-face {
-    font-family: "Noto Serif";
-    src: url(assets/noto.ttf);
-}
-
 body {
-    background-color: #c0e6ad;
-    display: block;
-    margin: 8px;
-    font-family: "Noto Serif",serif;
+    margin: 10px 20px;
 }
 
-.container {
-    margin: 0 auto;
-    width: 60%;
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.title {
-    font-size: 28px;
-    font-weight: 900;
-    margin-bottom: 5px;
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.note {
-    font-style: italic;
-    font-weight: bold;
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
 
-.paragraph {
-    font-size: 14px;
-    margin: 0 0 20px;
-}
-
-.btn {
-    background-color: #5ead0f;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-family: "Noto Serif",serif;
-    font-size: 18px;
-    font-weight: bolder;
-    margin-bottom: 16px;
-    padding: 6px 12px;
-}
-
-.btn:hover {
-    background-color:  #5ead0fc3; 
-    cursor: pointer;
-}
-
-.btn:active {
-background-color:  #5ead0f70;
-}
-
-.social-link {
-    color: #5ead0f;
-    font-style:normal;
-    font-weight: 700;
-    margin-right: 9px;
-    text-decoration: none;
-}
-
-.social-link:hover {
-    color: #5ead0fc3;
-}
-
-.social-link:active {
-    color:  #5ead0f70;
-}
-
-@media only screen and (max-width: 800px) {
-    .container {
-      width: 90%;
-    }
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
   
-    .title {
-      font-size: 26px;
-    }
-  
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
 }
-  
-@media only screen and (max-width: 450px) {
-    .title {
-        font-size: 18px;
-    }
 
-    .btn {
-        font-size: 14px;
-        padding: 4px 8px; 
-        border-radius: 6px;
-    }
+.inter-black-italic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  font-variation-settings: "slnt" 0;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.top-img {
+  width: 120px;
+  height: 120px;
+    
+  border-radius: 999px;
+  border: solid #D0D0D0 1px;
+}
+
+.top-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-title {
+  font-size: 4em;
+}
+
+.top-links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.top-link {
+  text-decoration: none;
+  color: #18A0FB;
+  font-size: 1.45em;
+}
+
+.top-link-btn {
+  text-decoration: none;
+  background-color: #18A0FB;
+  color: #FFFFFF;
+  font-size: 1.6em;
+  padding: 3px 20px;
+  border-radius: 999px;
+}
+
+.sections {
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.section {
+  font-size: 2em;
+  flex: 1;
+  border: solid #D0D0D0 1px;
+  border-radius: 16px;
+}
+
+.section-title {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.footer {
+  margin-top: 10px;
+  display: block;
+  color: #D0D0D0;
+}
+
+@media only screen and (max-width: 1550px) {
+  .sections {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .top-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .top-title {
+    font-size: 3em;
+  }
+
+  .top-link {
+    font-size: 1em;
+  }
+
+  .top-link-btn {
+    font-size: 1.25em;
+    padding: 3px 15px;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  .top-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .top-title {
+    font-size: 2.1em;
+  }
+
+  .top-link {
+    font-size: 0.65em;
+  }
+
+  .top-link-btn {
+    font-size: 0.85em;
+    padding: 3px 15px;
+  }
 }

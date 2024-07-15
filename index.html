@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hussein Amine</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-            <p class="title">Hussein Amine</p>
-            <button class="btn" onclick="contactme()">Contact Me</button>
-        </div>
-        <div class="paragraph">
-            <a class="social-link" href="https://github.com/husseinamine">Github</a>
-            <a class="social-link" href="https://instagram.com/husseinamine">Instagram</a>
-        </div>
-        <p class="paragraph note">Hello! Labours of mine, I present.</p>
-    </div>
+    <head>
+        <!-- META DATA -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hussein Amine</title>
 
-    <script src="script.js"></script>
-</body>
+        <!-- LOAD FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- LOAD STYLES -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="top-container">
+            <img class="top-img" src="./assets/me.jpg">
+                
+            </img>
+            <div class="top-data">
+                <div class="top-title inter-semibold">Hussein Amine</div>
+                <div class="top-links">
+                    <a href="https://github.com/husseinamine" class="top-link inter-black-italic">Github</a>
+                    <a href="mailto:contact@husseinamine.com" class="top-link inter-black-italic">Email</a>
+                    <a href="https://instagram.com/husseinamine" class="top-link inter-black-italic">Instagram</a>
+                    <a href="/resume.pdf" class="top-link-btn inter-medium">Resumé</a>
+                </div>
+            </div>
+        </div>
+        <div class="sections">
+                <div class="section inter-light">
+                    <div class="section-title">🏆 ACHIEVEMENTS</div>
+                    <div style="height: 80vh;"></div>
+                </div>
+                <div class="section inter-light">
+                    <div class="section-title">🔗 PROJECTS</div>
+                    <div style="height: 80vh;"></div>
+                </div>
+                <div class="section inter-light">
+                    <div class="section-title">📚 ACADEMICS</div>
+                    <div style="height: 80vh;"></div>
+                </div>
+        </div>
+        <footer class="footer inter-regular">
+            © 2024 Hussein Amine
+        </footer>
+    </body>
 </html>
