@@ -328,7 +328,45 @@ body {
   }
 
   .section-item-desc .info h1 {
-    font-size: 8px;
+    font-size: 12px;
+  }
+
+  .section-item-desc .info .feature {
+    font-size: 6.5px;
+    padding: 2px 4px;
+  }
+ 
+  .section-item-desc .date {
+    font-size: 7px;
+    color: var(--border-color);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .top-img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .top-title {
+    font-size: 2.285em;
+  }
+
+  .top-link {
+    font-size: 0.815em;
+  }
+
+  .top-link-btn {
+    font-size: 0.9em;
+    padding: 3px 15px;
+  }
+
+  .section-item {
+    height: 100px;
+  }
+
+  .section-item-desc .info h1 {
+    font-size: 10px;
   }
 
   .section-item-desc .info .feature {
