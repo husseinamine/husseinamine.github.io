@@ -404,6 +404,10 @@ body {
     height: 75px;
   }
 
+  .section-item-img {
+    width: 40%;
+  }
+
   .section-item-desc .info .features {
     padding-top: 3px;
     gap: 2px;
@@ -424,7 +428,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 380px) {
   .top-img {
     width: 65px;
     height: 65px;
@@ -453,11 +457,11 @@ body {
   }
 
   .section-item-desc .info h1 {
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .section-item-desc .info .feature {
-    font-size: 3px;
+    font-size: 5px;
     padding: 1.5px 3px;
   }
  
