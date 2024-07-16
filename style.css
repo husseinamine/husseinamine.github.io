@@ -375,10 +375,11 @@ body {
   }
  
   .section-item-desc .date {
-    font-size: 6px;
+    font-size: 8px;
     color: var(--border-color);
   }
 }
+
 
 @media only screen and (max-width: 400px) {
   .top-img {
@@ -409,11 +410,54 @@ body {
   }
 
   .section-item-desc .info h1 {
-    font-size: 6px;
+    font-size: 10px;
   }
 
   .section-item-desc .info .feature {
-    font-size: 5px;
+    font-size: 6px;
+    padding: 1.5px 3px;
+  }
+ 
+  .section-item-desc .date {
+    font-size: 6px;
+    color: var(--border-color);
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .top-img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .top-title {
+    font-size: 1.65em;
+  }
+
+  .top-link {
+    font-size: 0.55em;
+  }
+
+  .top-link-btn {
+    font-size: 0.65em;
+    padding: 2px 10px;
+  }
+
+  .section-item {
+    height: 75px;
+  }
+
+  .section-item-desc .info .features {
+    padding-top: 3px;
+    gap: 2px;
+  }
+
+  .section-item-desc .info h1 {
+    font-size: 9px;
+  }
+
+  .section-item-desc .info .feature {
+    font-size: 3px;
     padding: 1.5px 3px;
   }
  
