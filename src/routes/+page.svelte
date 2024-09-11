@@ -2,16 +2,7 @@
 	import me from '$lib/images/me.png';
     import { Col, Image, Row } from '@sveltestrap/sveltestrap';  
 	import ProjectCard from '../lib/components/ProjectCard.svelte';
-	import grocerie from '$lib/images/thumbnails/grocerie.jpg';
-
-	const projects = [
-		{
-			title: "Grocerie",
-			description: "Grocerie is your shopping's co-pilot. Save money by comparing prices. Built with Flutter. Initially started as a tool I needed to check item's prices at multiple stores at once by just scanning the barcode. and using Google's Gemini API we were able to add cutting edge features like basket building by recipe name and image product recognition.",
-			imageUrl: grocerie,
-			projectUrl: "https://ai.google.dev/competition/projects/grocerie"
-		},
-	];
+	import projects from '../lib/projects';
 </script>
 
 <svelte:head>
@@ -47,11 +38,13 @@
 	</Row>
 	<br />
 	<h1>Projects</h1>
-	{#each projects as project}
-		<Col>
-			<ProjectCard {...project} />
-		</Col>
-	{/each}
+	<Row>
+		{#each projects as project}
+			<Col lg={6} md={6} sm={12}>
+				<ProjectCard {...project} />
+			</Col>
+		{/each}
+	</Row>
 </section>
 
 <style>
@@ -64,10 +57,10 @@
 	a {
 		text-decoration: none;
 		font-weight: 700;
-		color: #0095FF;
+		color: var(--primary-color);
 	}
 
 	a:visited {
-		color: #0095FF;
+		color: var(--primary-color);
 	}
 </style>

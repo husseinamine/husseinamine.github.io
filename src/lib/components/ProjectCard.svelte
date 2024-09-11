@@ -3,12 +3,12 @@
 
     export let title: string;
     export let description: string;
-    export let imageUrl: string;
+    export let image: string;
     export let projectUrl: string;
 </script>
 
 <Card class="project-card mb-4">
-    <img src={imageUrl} class="card-img-top" alt={title} />
+    <img src={image} class="card-img-top" alt={title} />
     <CardBody>
         <CardTitle>{title}</CardTitle>
         <CardText>{description}</CardText>

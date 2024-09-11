@@ -1,6 +1,8 @@
 <script>
+	// @ts-nocheck
 	import { page } from '$app/stores';
 	import logo from '$lib/images/favicon.svg';
+    import { Button, Icon, ThemeToggler } from '@sveltestrap/sveltestrap';
 </script>
 
 <header>
@@ -10,9 +12,6 @@
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined} class={$page.url.pathname === '/' ? 'active' : ''}>
 				<a href="/">Home</a>
@@ -21,12 +20,14 @@
 				<a href="/blog">Blog</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 
 	<div class="corner">
+		<ThemeToggler let:currentColorMode let:toggleColorMode>
+			<a on:click|preventDefault={() => toggleColorMode()} href={""}>
+				<Icon name={currentColorMode === 'light' ? "moon" : "sun"} />
+			</a>
+		</ThemeToggler>
 	</div>
 </header>
 
@@ -59,7 +60,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
@@ -88,11 +88,11 @@
 	li {
 		position: relative;
 		height: 100%;
-		color: #9d9d9d;
+		color: var(--secondary-color);
 	}
 
 	.active {
-		color: #0095FF;
+		color: var(--primary-color);
 	}
 
 	li[aria-current='page']::before {

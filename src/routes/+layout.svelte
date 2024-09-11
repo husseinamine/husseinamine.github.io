@@ -1,7 +1,28 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte';
 	import Header from './Header.svelte';
+    import { colorMode } from '@sveltestrap/sveltestrap';
 	import '../app.css';
+
+	const onColorModeChange = (e: MediaQueryListEvent) => {
+		$colorMode = e.matches ? "dark" : "light"
+	}
+
+	onMount(() => {
+		const matchedMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+		$colorMode = matchedMediaQuery.matches ? 'dark' : 'light';
+		
+		matchedMediaQuery.addEventListener('change', onColorModeChange);
+
+		return () => {
+			matchedMediaQuery.removeEventListener('change', onColorModeChange);
+		}
+	});
 </script>
+
+<svelte:head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" />
+</svelte:head>
 
 <div class="app">
 	<Header />
@@ -38,12 +59,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		color: #9d9d9d;
+		color: var(--secondary-color);
 	}
-
-	/* @media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	} */
 </style>
