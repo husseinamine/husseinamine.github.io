@@ -40,7 +40,7 @@
 	<h1>Projects</h1>
 	<Row>
 		{#each projects as project}
-			<Col lg={6} md={6} sm={12}>
+			<Col lg={6} md={12} sm={12}>
 				<ProjectCard {...project} />
 			</Col>
 		{/each}
