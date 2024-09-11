@@ -32,7 +32,7 @@
 	</main>
 
 	<footer>
-		<p>© Hussein Amine {new Date().getFullYear()}</p>
+		<p>© {new Date().getFullYear()} Hussein Amine</p>
 	</footer>
 </div>
 
