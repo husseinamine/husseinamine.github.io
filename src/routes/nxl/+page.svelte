@@ -3,6 +3,11 @@
     import { Col, Image, Row } from '@sveltestrap/sveltestrap';
 </script>
 
+<svelte:head>
+	<title>NotionXL</title>
+	<meta name="description" content="What is NotionXL?" />
+</svelte:head>
+
 <Row>
     <Col lg={6}>
         <h1>NotionXL</h1>
