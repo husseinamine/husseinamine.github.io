@@ -10,6 +10,9 @@
 
 <Row>
     <Col lg={6}>
+        <Image fluid src={notionxl} style="border-radius: 16px"></Image>
+    </Col>
+    <Col lg={6}>
         <h1>NotionXL</h1>
         <div>
             <p>An easy to use extension that allows you to convert a notion table/database you are viewing into CSV format. </p>
@@ -23,9 +26,6 @@
             <p>More features to come soon, maybe?</p>
             <p>For support contact me at: <a href="mailto:contact@husseinamine.com">contact@husseinamine.com</a></p>
         </div>
-    </Col>
-    <Col lg={6}>
-        <Image fluid src={notionxl} style="border-radius: 16px"></Image>
     </Col>
 </Row>
 
