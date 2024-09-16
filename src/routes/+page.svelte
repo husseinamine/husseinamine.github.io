@@ -53,14 +53,4 @@
 		flex-direction: column;
 		flex: 0.6;
 	}
-
-	a {
-		text-decoration: none;
-		font-weight: 700;
-		color: var(--primary-color);
-	}
-
-	a:visited {
-		color: var(--primary-color);
-	}
 </style>
