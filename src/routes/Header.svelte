@@ -20,7 +20,7 @@
 				<a href="/blog">Blog</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/nxl' ? 'page' : undefined} class={$page.url.pathname === '/nxl' ? 'active' : ''}>
-				<a href="/blog">NotionXL</a>
+				<a href="/nxl">NotionXL</a>
 			</li>
 		</ul>
 	</nav>
