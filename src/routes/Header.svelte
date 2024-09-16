@@ -19,6 +19,9 @@
 			<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined} class={$page.url.pathname === '/blog' ? 'active' : ''}>
 				<a href="/blog">Blog</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/nxl' ? 'page' : undefined} class={$page.url.pathname === '/nxl' ? 'active' : ''}>
+				<a href="/blog">NotionXL</a>
+			</li>
 		</ul>
 	</nav>
 
