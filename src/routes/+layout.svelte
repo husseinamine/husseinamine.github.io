@@ -18,6 +18,7 @@
 			matchedMediaQuery.removeEventListener('change', onColorModeChange);
 		}
 	});
+
 </script>
 
 <svelte:head>
